@@ -1,15 +1,53 @@
+@import url(./fonts/Gilroy/stylesheet.css);
+
+body {
+    font-family: Gilroy;
+}
+
 .nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "nav1 nav2 nav3"; 
+
+    border-bottom: 1px solid #cdcdcd;
+    margin: 18px;
+    padding: 26px 0;
+}
+
+#nav-area1 {
+    grid-area: nav1;
+}
+
+#nav-area2 {
+    grid-area: nav2;
+}
+
+#nav-area3 {
+    grid-area: nav3;
+}
+
+.nav-area{ 
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 36px;
+    align-content: center;
 }
 
 .nav-btn {
-    font-size: 20px;
-    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(38, 38, 38);
     text-decoration: none;
 }
 
+.nav-btn:hover{
+    color: rgb(104, 104, 104);
+    
+}
+
 #brand-title {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 400;
 }
