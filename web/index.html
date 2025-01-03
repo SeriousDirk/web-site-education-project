@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Page Title</title>
+        <title>Автогалерея</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
         <!-- <script src='main.js'></script> -->
@@ -11,19 +11,169 @@
 
     <body>
         <header class="nav-bar">
-            <div id="nav-area1" class="nav-area" style="justify-self: start;">
+            <div id="nav-area1" class="nav-area" style="justify-self: start">
                 <a href="#" class="nav-btn">Каталог автомобилей</a>
                 <a href="#" class="nav-btn">Бренды авто</a>
                 <a href="#" class="nav-btn">Контакты</a>
             </div>
             <div id="nav-area2" class="nav-area">
-                <a href="#" class="nav-btn" id="brand-title">Автогалерея</a>
+                <a href="#" class="nav-btn selected-page" id="brand-title">Автогалерея</a>
             </div>
-            <div id="nav-area3" class="nav-area" style="justify-self: end;">
+            <div id="nav-area3" class="nav-area" style="justify-self: end">
                 <a href="#" class="nav-btn">Отзывы</a>
                 <a href="#" class="nav-btn">Блог</a>
                 <a href="#" class="nav-btn">О нас</a>
             </div>
         </header>
+
+        <div class="title">
+            <h1>Автомобильные фотографии высокого качества</h1>
+            <h4>Наша галерея предлагает широкий спектр профессиональных фотографий автомобилей.</h4>
+            <div>
+                <a href="#">Посмотреть галерею</a>
+            </div>
+        </div>
+        <div
+            style="
+                margin: 0 36px 135px;
+                height: 730px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                border-radius: 20px;
+            "
+        >
+            <div
+                style="
+                    background-image: url(./assets/stylish-modern-car-s.jpg);
+                    width: 100%;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                "
+            ></div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 20px 0 80px">
+            <h1>Автомобильные шедевры</h1>
+            <h3 style="font-weight: 300">Подборка лучших фотографий автомобилей</h3>
+        </div>
+        <div style="display: flex; justify-content: center; margin-bottom: 135px">
+            <div
+                style="
+                    display: grid;
+                    grid-template-columns: 290px 290px 290px 290px;
+                    grid-template-rows: 217px 217px;
+                    gap: 0px 0px;
+                    grid-template-areas:
+                        'i1 i2 i3 i4'
+                        'i5 i6 i7 i8';
+                "
+            >
+                <div
+                    class="anim-gal"
+                    style="background: url(./assets/gal/1.jpg) center center / cover no-repeat; grid-area: i1"
+                ></div>
+                <div
+                    class="anim-gal"
+                    style="background: url(./assets/gal/2.jpg) center center / cover no-repeat; grid-area: i2"
+                ></div>
+                <div
+                    class="anim-gal"
+                    style="background: url(./assets/gal/3.jpg) center center / cover no-repeat; grid-area: i3"
+                ></div>
+                <div
+                    class="anim-gal"
+                    style="background: url(./assets/gal/4.jpg) center center / cover no-repeat; grid-area: i4"
+                ></div>
+                <div
+                    class="anim-gal"
+                    style="background: url(./assets/gal/5.jpg) center center / cover no-repeat; grid-area: i5"
+                ></div>
+                <div
+                    class="anim-gal"
+                    style="background: url(./assets/gal/6.jpg) center center / cover no-repeat; grid-area: i6"
+                ></div>
+                <div
+                    class="anim-gal"
+                    style="background: url(./assets/gal/7.jpg) center center / cover no-repeat; grid-area: i7"
+                ></div>
+                <div
+                    class="anim-gal"
+                    style="background: url(./assets/gal/8.jpg) center center / cover no-repeat; grid-area: i8"
+                ></div>
+            </div>
+        </div>
+
+        <div style="background-color: #fbf5f4; padding: 135px 0">
+            <div style="width: 1000px; display: flex; margin: 0 auto; align-items: center">
+                <div style="margin: 0 20px">
+                    <h1>О нашем проекте</h1>
+                    <h3 style="font-weight: 300; font-size: 1.05em">
+                        Мы собрали лучшие фотографии автомобилей, сделанные опытным фотографом. Он любит своё дело и
+                        увлечённо снимает машины, уделяя внимание каждой детали. Приглашаем вас насладиться красотой и
+                        мощью авто в его объективе.
+                    </h3>
+                </div>
+                <div
+                    style="
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: 1fr 1fr;
+                        gap: 20px;
+                        grid-template-areas:
+                            'i1 i2'
+                            'i3 i4';
+                        margin: 0 20px;
+                    "
+                >
+                    <div
+                        style="
+                            background: url(./assets/about/1.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            height: 220px;
+                            width: 220px;
+                            border-radius: 15px;
+                            grid-area: i1;
+                        "
+                    ></div>
+                    <div
+                        style="
+                            background: url(./assets/about/2.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            height: 220px;
+                            width: 220px;
+                            border-radius: 15px;
+                            grid-area: i2;
+                        "
+                    ></div>
+                    <div
+                        style="
+                            background: url(./assets/about/3.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            height: 220px;
+                            width: 220px;
+                            border-radius: 15px;
+                            grid-area: i3;
+                        "
+                    ></div>
+                    <div
+                        style="
+                            background: url(./assets/about/4.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            height: 220px;
+                            width: 220px;
+                            border-radius: 15px;
+                            grid-area: i4;
+                        "
+                    ></div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

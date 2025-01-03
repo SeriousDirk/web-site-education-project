@@ -2,18 +2,18 @@
 
 body {
     font-family: Gilroy;
+    margin: 0;
 }
 
 .nav-bar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: 
-    "nav1 nav2 nav3"; 
+    grid-template-areas: "nav1 nav2 nav3";
 
     border-bottom: 1px solid #cdcdcd;
-    margin: 18px;
-    padding: 26px 0;
+    margin: 0 36px;
+    padding: 32px 0;
 }
 
 #nav-area1 {
@@ -28,7 +28,7 @@ body {
     grid-area: nav3;
 }
 
-.nav-area{ 
+.nav-area {
     display: flex;
     justify-content: space-around;
     gap: 36px;
@@ -42,12 +42,62 @@ body {
     text-decoration: none;
 }
 
-.nav-btn:hover{
+.nav-btn:hover,
+.selected-page {
     color: rgb(104, 104, 104);
-    
+    text-decoration: underline;
 }
 
 #brand-title {
     font-size: 20px;
     font-weight: 400;
+}
+
+.title {
+    padding-top: 120px;
+    padding-bottom: 60px;
+
+    display: grid;
+    grid-template-columns: 1fr 1.7fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". h1 ."
+        ". h4 ."
+        ". a .";
+    text-align: center;
+    gap: 24px 0;
+}
+
+.title h1 {
+    font-size: 3em;
+    font-weight: 600;
+    grid-area: h1;
+}
+
+.title h4 {
+    font-size: 18px;
+    font-weight: 300;
+    grid-area: h4;
+}
+
+.title div {
+    grid-area: a;
+    padding: 20px;
+}
+
+.title div a {
+    font-size: 14px;
+    color: white;
+    font-weight: 300;
+    font-weight: 600;
+    background-color: #d69e8e;
+
+    border-radius: 32px;
+    text-decoration: none;
+
+    padding: 20px 56px;
+}
+
+.anim-gal:hover {
+    box-shadow: 0px 0px 19px 9px rgba(34, 60, 80, 0.2);
 }
